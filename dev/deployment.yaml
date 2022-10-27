@@ -13,6 +13,6 @@ spec:
     spec:
       containers:
         - name: cat
-          image: nina96/cat:1.0
+          image: library/redis:7.0.5
           ports:
             - containerPort: 8080
