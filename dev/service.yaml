@@ -1,0 +1,11 @@
+apiVersion: 1.0
+kind: Service
+metadata:
+  name: cat-deployment
+spec:
+  selector:
+    app: cat
+  ports:
+    - port: 8080
+      protocol: TCP
+      targetPort: 8080

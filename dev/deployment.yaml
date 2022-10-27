@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cat-deployment
+spec:
+  selector:
+    matchLabels:
+      app: cat
+  replicas: 2
+  template:
+    metadata:
+      label: cat
+    spec:
+      containers:
+        - name: cat
+          image: nina96/cat:1.0
+          ports:
+            - containerPort: 8080
