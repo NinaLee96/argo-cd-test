@@ -9,7 +9,8 @@ spec:
   replicas: 2
   template:
     metadata:
-      label: cat
+      labels:
+        app: cat
     spec:
       containers:
         - name: cat
