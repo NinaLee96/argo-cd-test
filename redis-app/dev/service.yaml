@@ -1,10 +1,10 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: cat-deployment
+  name: redis-app
 spec:
   selector:
-    app: cat
+    app: redis
   ports:
     - port: 8080
       protocol: TCP
